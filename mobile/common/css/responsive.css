@@ -1,0 +1,91 @@
+@media only screen and (orientation: portrait) {
+    #masthead-container {background-size: cover;}
+}
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+    #masthead-container {background-size: cover;}
+    .container h1 p {font-size: 12px;}
+    .container h1 p strong {display: block;}
+    .login-container {bottom: 2%;}
+    #slide-login.slide-menu {background-position: center 260px;}
+}
+@media only screen and (min-width: 375px) and (orientation: portrait) {
+    #masthead-container {background-size: 125%;}
+    .container h1 p strong {display: block;}
+    #slide-login.slide-menu {background-position: center bottom;}
+}
+@media only screen and (min-width: 414px) and (orientation: portrait) {
+    #masthead-container {background-size: 130%;}
+    .container h1 p {font-size: 15px; line-height: 25px;}
+    .container h1 p strong {display: inline-block;}
+    .login-container {bottom: 15%;}
+    .login-container .form-group {margin-bottom: 8px;}
+    #slide-login.slide-menu {background-position: center bottom;}
+}
+@media only screen and (min-height: 768px) and (orientation: portrait) {
+    #masthead-container {background-size: 92%; height: 375px;}
+    .gamebutton {height: 220px;}
+    .gamebutton h3 {font-size: 18px; padding: 0 5px 5px 5px;}
+    .gamebutton p {font-size: 10px; padding: 0 20px;}
+    #slide-login.slide-menu {background-position: center bottom;}
+}
+
+
+@media only screen and (orientation: landscape) {
+    #slide-login.slide-menu {background: #070707;}
+    /*.login-container {position: relative; margin: 60px auto 0 auto;}*/
+}
+@media only screen and (max-height: 320px) and (orientation: landscape) {
+}
+@media only screen and (min-height: 375px) and (orientation: landscape) {
+    .gamebutton {height: 170px;}
+}
+@media only screen and (min-height: 414px) and (orientation: landscape) {
+    .gamebutton h3 {font-size: 18px; padding: 0 5px 5px 5px;}
+    .gamebutton p {font-size: 10px; padding: 0 20px;}
+}
+@media only screen and (min-height: 768px) and (orientation: landscape) {
+    .container {width: 100%; padding: 0 20px 10px 20px;}
+    #masthead-container {background-size: 92%; height: 375px;}
+    .gamebutton {height: 220px;}
+    .gamebutton h3 {font-size: 18px; padding: 0 5px 5px 5px;}
+    .gamebutton p {font-size: 10px; padding: 0 20px;}
+    #slide-login.slide-menu {background: url("../images/bg-login2.png") #070707 center bottom no-repeat; background-size: 100%;}
+}
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+    #masthead-container {height: 365px; background-position: center -70px;}
+    .livecasino #gamebutton-3 .gamebutton {height: 220px;}
+    .gamebutton1 {}
+}
+
+/*Game Buttons*/
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+    .responsive-thumbnails li {height: 130px !important;}
+}
+@media only screen and (min-width: 375px) and (orientation: portrait) {
+    /*.slot-item {height: 140px;}*/
+    .responsive-thumbnails li {height: 123px !important;}
+}
+@media only screen and (min-width: 414px) and (orientation: portrait) {
+    .responsive-thumbnails li {height: 130px !important;}
+}
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .responsive-thumbnails li {height: 140px !important;}
+    .slot-item {height: 130px !important;}
+    .livecasino #gamebutton-1 .gamebutton {height: 130px;}
+    .livecasino #gamebutton-1 .gamebutton-play {width: 63%; bottom: 30px; background: none;}
+}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .responsive-thumbnails li {height: 140px !important;}
+    .slot-item {height: 130px !important;}
+    .livecasino #gamebutton-1 .gamebutton {height: 130px;}
+    .livecasino #gamebutton-1 .gamebutton-play {width: 63%; bottom: 30px; background: none;}
+}
+@media only screen and (max-height: 320px) and (orientation: landscape) {
+    .responsive-thumbnails li {height: 130px !important;}
+}
+@media only screen and (min-height: 375px) and (orientation: landscape) {
+    .livecasino #gamebutton-1 .gamebutton {height: 130px;}
+    .livecasino #gamebutton-1 .gamebutton-play {width: 63%; bottom: 30px; background: none;}
+    /*.slot-item {height: 120px;}
+    .responsive-thumbnails li {height: 130px !important;}*/
+}

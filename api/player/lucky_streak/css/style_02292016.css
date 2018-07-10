@@ -1,0 +1,171 @@
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+body {background: url('../images/bg-luckystreak.png') center top no-repeat #0d1e2c; margin: 0; padding: 0; font-family: 'Dotum', 'Tahoma', 'Arial', sans-serif; color: #cccccc; font-size: 12px;}
+a {text-decoration: none; color: #cccccc;}
+
+.clear {clear: both;}
+.float-left {float: left;}
+.float-right {float: right;}
+.container {width: 1024px; height: 575px; /*width: 1024px; height: 633px;*/ margin: 0 auto; overflow-y: visible;}
+.dealer-container {width: 990px; margin: 6px auto;}
+
+.header {display: block; height: 40px;}
+.logo {display: inline-block; float: left; width: 200px; height: 40px; background: url('../images/logo.png') center no-repeat;}
+
+.nav {display: inline-block;}
+.nav ul, .dealer-info ul, .blackjack-details ul, .roulette-details ul {margin: 0; padding: 0; list-style: none;}
+.nav ul li {display: inline-block; color: #b1b1b1; font-family: 'Nanum Gothic', sans-serif; font-weight: 800; text-shadow: 2px 2px 2px #000000; line-height: 40px; padding: 0 22px; font-size: 18px; letter-spacing: -1px;}
+.nav ul li:hover {color: #dbdbdb; cursor: pointer;}
+.nav ul li.active {color: #47abd1;}
+
+.account {display: inline-block; float: right; margin-right: 30px;}
+.account p {margin: 0 0 0 20px; padding: 0; display: inline-block; float: left; line-height: 40px;}
+.account p strong {color: #ffffff;}
+.account p strong.highlight {color: #eb008b;}
+
+.note {display: block; width: 96%; margin: 6px auto; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.2); padding: 8px 0; font-size: 12px; font-weight: normal; text-align: center; color: #e1e64e; font-family: 'Nanum Gothic', sans-serif;}
+
+.game-content {display: none; position: absolute; top: 0; left: 0; width: 770px; height: 500px; z-index: 9999; background: #000000;}
+.item-baccarat, .item-blackjack, .item-roulette {background: rgba(0,0,0,0.5); padding: 10px; position: relative;}
+
+/*Baccarat*/
+.item-baccarat {display: block; width: 958px; /*970px;*/ margin: 0 auto 10px auto; padding: 10px 14px 7px 14px;}
+.dealer-thumb {display: inline-block; margin: 0 13px; width: 100px; height: 116px; background: #000000;}
+.dealer-info {display: block; float: right; width: 735px;}
+.dealer-info ul, .dealer-info li {display: inline-block;}
+.dealer-info li {float: left; height: 24px; line-height: 24px;}
+.dealer-info ul.float-left li {margin-right: 6px;}
+.dealer-info li strong {color: #fff; margin-right: 10px;}
+.dealer-play-content {display: inline-block; float: right; width: 236px;}
+.dealer-play {display: inline-block; margin: 4px 0 0 8px;}
+/*.dealer-play a {width: 102px; height: 102px; line-height: 60px; border-radius: 6px; background: #396980; text-align: center; color: #afbec6; text-decoration: none;}*/
+.dealer-closed {width: 218px; height: 84px; display: inline-block; border: 1px solid rgba(255,255,255,0.2); margin: 4px 0 0 5px; text-align: center; vertical-align: middle; line-height: 84px; font-weight: 800;}
+
+.img-baccarat, .img-roulette, .img-blackjack {display: inline-block; height: 114px;}
+.img-baccarat {width: 93px; background: url('../images/img-baccarat.png') center no-repeat;}
+.img-roulette {width: 125px; background: url('../images/img-roulette.png') center no-repeat;}
+.img-blackjack {width: 184px; background: url('../images/img-blackjack.png') center no-repeat;}
+
+.dealer-play a {display: block; width: 218px; height: 24px; line-height: 24px; padding-left: 10px; margin: 0 0 3px 0; font-family: 'Dotum', sans-serif; font-size: 13px; font-weight: 800; background: url('../images/bg-gray.png') top repeat-x #313131; position: relative;}
+.dealer-play a:hover {background: url('../images/bg-gray-hover.png') top repeat-x #505050; color: #fff; cursor: pointer;}
+.dealer-play a strong {display: inline-block; background: url('../images/bg-game.png') top repeat-x #ba006e; font-family: 'Nanum Gothic', sans-serif; position: absolute; top: 0; right: 0; width: 75px; text-align: center;}
+.dealer-play a:hover strong {background: url('../images/bg-game-hover.png') top repeat-x #bd0371;}
+
+.dealer-table {display: inline-block; background: url('../images/bg-table.png'); width: 494px; /*717px;*/ height: 83px; /*103px;*/ margin: 4px 0 0 2px; padding: 3px 0 0 1px; float: left; /*height: 80px;*/ overflow: hidden;}
+.dealer-table table {background: #3d3d3d;}
+.dealer-table table td {width: 16px; height: 16px; background: #000000; text-align: center; padding: 0; margin: 0;}
+.dealer-table span {display: block; height: 16px; margin: 1px 1px 0 0;}
+
+.btn-on, .btn-off {text-decoration: none; background: #0cab00; border-radius: 4px; color: #fff; padding: 4px; letter-spacing: -1px; font-size: 11px;}
+.btn-on:hover {background: #1ec711;}
+
+.btn-off {background: #9a063e;}
+.btn-off:hover {background: #b7114f;}
+
+.icon-baccarat {width: 16px; height: 16px; display: inline-block; margin: -2px 1px 0 0;}
+.icon-B- {background: url('../images/icon-b.png') center no-repeat;}
+.icon-B-PP {background: url('../images/icon-b-pp.png') center no-repeat;}
+.icon-B-BP {background: url('../images/icon-b-bp.png') center no-repeat;}
+.icon-B-PPBP {background: url('../images/icon-b-pp-bp.png') center no-repeat;}
+.icon-B-BPPP {background: url('../images/icon-b-pp-bp.png') center no-repeat;}
+
+.icon-P- {background: url('../images/icon-p.png') center no-repeat;}
+.icon-P-PP {background: url('../images/icon-p-pp.png') center no-repeat;}
+.icon-P-BP {background: url('../images/icon-p-bp.png') center no-repeat;}
+.icon-P-PPBP {background: url('../images/icon-p-pp-bp.png') center no-repeat;}
+.icon-P-BPPP {background: url('../images/icon-p-pp-bp.png') center no-repeat;}
+
+.icon-T- {background: url('../images/icon-t.png') center no-repeat;}
+.icon-T-PP {background: url('../images/icon-t-pp.png') center no-repeat;}
+.icon-T-BP {background: url('../images/icon-t-bp.png') center no-repeat;}
+.icon-T-PPBP {background: url('../images/icon-t-pp-bp.png') center no-repeat;}
+.icon-T-BPPP {background: url('../images/icon-t-pp-bp.png') center no-repeat;}
+
+/*BlackJack*/
+/*.item-blackjack {display: inline-block; width: 300px; height: 183px; margin: 0 auto;}*/
+/*.noOfSeats {width: 169px; height: 120px; margin-bottom: 8px; background: url('../images/bg-blackjack.png') center top no-repeat; position: relative;}*/
+/*.vipSeats {background: url('../images/bg-blackjack-vip.png') center top no-repeat;}*/
+.item-blackjack .dealer-info {width: 649px;}
+.item-blackjack .dealer-thumb {margin: 0 10px;}
+.noOfSeats {display: inline-block; width: 217px;}
+.noOfSeats p {display: block; width: 100%; background: url('../images/bg-seats.png') top repeat-x; line-height: 22px; height: 22px; margin: 0; padding: 0; border: 1px solid rgba(255,255,255,0.1); text-align: center;}
+.noOfSeats p strong {color: #ffffff;}
+
+.blackjack-details {display: inline-block; padding-top: 9px;}
+.blackjack-details ul li {display: block; line-height: 18px;}
+.blackjack-details strong {color: #fff;}
+
+.blackjack-thumb {width: 120px; height: 156px; position: absolute; top: 10px; right: 10px; background: #000000;}
+.blackjack-play {width: 120px; height: 27px; position: absolute; bottom: 10px; right: 10px;}
+.blackjack-play a {display: block; width: 120px; height: 27px; line-height: 27px; background: #396980; text-align: center; color: #afbec6; text-decoration: none; font-family: 'Nanum Gothic', sans-serif; font-size: 14px; font-weight: 800;}
+.blackjack-play a:hover {background: #5da7cb; color: #fff;}
+
+/*Roulette*/
+.item-roulette, .item-blackjack {display: block; width: 958px; /*970px;*/ margin: 0 auto 10px auto; padding: 10px 14px 7px 14px;}
+.item-roulette .dealer-info {width: 718px;}
+.item-roulette .dealer-thumb {margin: 0 10px 0 0;}
+.item-roulette .dealer-play-content {width: 252px;}
+.item-roulette .dealer-play a {width: 234px;}
+/*.item-roulette {display: inline-block; width: 300px; height: 125px; margin: 0 3px 8px 3px;}*/
+
+/*.roulette-details {display: inline-block;}
+.roulette-details ul li, .roulette-details div {display: block; line-height: 17px;}
+.roulette-details strong {color: #fff;}*/
+
+.roulette-thumb {width: 104px; height: 99px; position: absolute; top: 10px; right: 10px; background: #000000;}
+.roulette-play {width: 104px; height: 27px; position: absolute; bottom: 10px; right: 10px;}
+.roulette-play a {display: block; width: 104px; height: 27px; line-height: 27px; background: #396980; text-align: center; color: #afbec6; text-decoration: none; font-family: 'Nanum Gothic', sans-serif; font-size: 14px; font-weight: 800;}
+.roulette-play a:hover {background: #5da7cb; color: #fff;}
+
+/*.roulette-table {float: left; height: 52px; margin-top: 2px;}*/
+.roulette-table {float: left; display: inline-block; background: url('../images/bg-roulette-table.png'); width: 459px; height: 87px; margin: 3px 0 0 0; padding: 1px; overflow: hidden;}
+.roulette-table div {margin: 0 1px 0 0;}
+.roulette-table ul, .roulette-table ul li {list-style: none;}
+.roulette-table table {background: #3d3d3d;}
+.roulette-table table td {width: 19px; height: 19px; border: 1px solid #000; background: #000000; text-align: center; padding: 0; margin: 0; font-weight: normal; font-size: 11px; font-family: "Tahoma", sans-serif; color: #fff; line-height: 15px;}
+.roulette-table table td.r-red {background: url('../images/r-red2.png') repeat-x top #a10e1b;}
+.roulette-table table td.r-black {background: url('../images/r-black2.png') repeat-x top #141414;}
+.roulette-table table td.r-gray {background: url('../images/r-gray2.png') repeat-x top #4a4a4a;}
+.roulette-table table td.r-green {background: url('../images/r-green2.png') repeat-x top #547b28;}
+
+.icon-roulette {width: 20px; height: 20px; background: #000000; text-align: center; padding: 0; margin: 0px 1px 2px 0; font-weight: normal; font-size: 11px; font-family: "Tahoma", sans-serif; color: #fff; line-height: 19px;}
+.icon-roulette.roulette-0 {background: url('../images/r-green2.png') repeat-x top #547b28;}
+.icon-roulette.roulette-1,
+.icon-roulette.roulette-3,
+.icon-roulette.roulette-5,
+.icon-roulette.roulette-7,
+.icon-roulette.roulette-9,
+.icon-roulette.roulette-12,
+.icon-roulette.roulette-14,
+.icon-roulette.roulette-16,
+.icon-roulette.roulette-18,
+.icon-roulette.roulette-19,
+.icon-roulette.roulette-21,
+.icon-roulette.roulette-23,
+.icon-roulette.roulette-25,
+.icon-roulette.roulette-27,
+.icon-roulette.roulette-30,
+.icon-roulette.roulette-32,
+.icon-roulette.roulette-34,
+.icon-roulette.roulette-36 {background: url('../images/r-red2.png') repeat-x top #a10e1b;}
+.icon-roulette.roulette-2,
+.icon-roulette.roulette-4,
+.icon-roulette.roulette-6,
+.icon-roulette.roulette-8,
+.icon-roulette.roulette-10,
+.icon-roulette.roulette-11,
+.icon-roulette.roulette-13,
+.icon-roulette.roulette-15,
+.icon-roulette.roulette-17,
+.icon-roulette.roulette-20,
+.icon-roulette.roulette-22,
+.icon-roulette.roulette-24,
+.icon-roulette.roulette-26,
+.icon-roulette.roulette-28,
+.icon-roulette.roulette-29,
+.icon-roulette.roulette-31,
+.icon-roulette.roulette-33,
+.icon-roulette.roulette-35 {background: url('../images/r-black2.png') repeat-x top #141414;}
+
+/*Loading*/
+#preloader {position: fixed; width: 100%; top: 0; left: 0; right: 0; bottom: 0; z-index: 99999999; background: url('../images/bg-loading.jpg') center top no-repeat #0d1e2c; vertical-align: middle; text-align: center;}
+.preloader-gif {width: 220px; height: 25px; /*position:absolute; left: 50%; top: 50%; margin: -25px 0 0 -12px;*/ background: url('../images/preloader.gif') no-repeat; border-radius: 12px; box-shadow: 0 0 5px #bebebe; display: inline-block; margin-top: 410px; margin-left: -14px;}

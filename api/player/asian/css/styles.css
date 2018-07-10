@@ -1,0 +1,41 @@
+/* http://meyerweb.com/eric/tools/css/reset/  - v2.0 | 20110126 - License: none (public domain)*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+html, body {background: #bebebe; font: normal 12px Arial, Tahoma; color: #000000;}
+img, a img, a, a:hover, a:visited, a:active, a:link {border: none; text-decoration: none;}
+input, select, textarea, button {-webkit-appearance: none; -moz-appearance: none; appearance:none;}
+.clear {clear: both; margin: 0; padding: 0;}
+
+.wrapper {width: 800px; height: 790px; margin: 0 auto; background: #ffffff;}
+.container {width: 780px; height: 770px; background: #ffffff;}
+#notice {width: 780px; margin: 0; padding: 10px;}
+.notice-content {height: 722px; border: 1px solid #8a8a8a; margin: 7px 10px;}
+.highlight-text {color: #d6b355;}
+
+/*Tabs*/
+.shadetabs {list-style-type: none; text-align: left; display: block;}
+.shadetabs li {display: inline-block; float: left; margin: 0; width: 195px; height: 40px;}
+.shadetabs li a {display: inline; float: left; position: relative; z-index: 1; margin: 0 !important; padding: 19px 98px; background: url("../images/menu.png") no-repeat;}
+.shadetabs li a:visited {}
+.shadetabs li a:hover, .shadetabs li a.selected {position: relative;}
+.shadetabs li a#tab-link1 {background-position: 0 0;}
+.shadetabs li a#tab-link1.selected, .shadetabs li a#tab-link1:hover {background-position: 0 -40px;}
+.shadetabs li a#tab-link2 {background-position: -195px 0;}
+.shadetabs li a#tab-link2.selected, .shadetabs li a#tab-link2:hover {background-position: -195px -40px;}
+.shadetabs li a#tab-link3 {background-position: -390px 0;}
+.shadetabs li a#tab-link3.selected, .shadetabs li a#tab-link3:hover {background-position: -390px -40px;}
+.shadetabs li a#tab-link4 {background-position: -585px 0;}
+.shadetabs li a#tab-link4.selected, .shadetabs li a#tab-link4:hover {background-position: -585px -40px;}
+.tabcontent {display:none;}
+#tab-content1 {padding: 0; text-align: center;}
+#tab-content2 {padding: 10px; text-align: center; width: 738px; height: 692px; margin : 0 auto; overflow-x: auto; overflow-y: hidden; cursor: hand; cursor: -moz-grab; cursor: -webkit-grab; cursor: grab;}
+#tab-content3 {padding: 10px; text-align: center; width: 738px; height: 692px; margin : 0 auto; overflow-x: auto; overflow-y: hidden; cursor: hand; cursor: -moz-grab; cursor: -webkit-grab; cursor: grab;}
+#tab-content4 {padding: 0; text-align: center;}
+
+@media print {.tabcontent {display:block !important;}}

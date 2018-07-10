@@ -1,0 +1,433 @@
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+html, body {width: 100%; height: 100%;}
+body, h1, h2, h3, h4, h5, h6, p, button, input, select, textarea {margin: 0; padding: 0; font-family: 'Nanum Gothic', sans-serif;}
+body {color: #666666; background: #1a1a1a;}
+input[type='text'], input[type='password'], input[type='email'], input[type='tel'], input[type='number'], button, textarea, select {appearance:normal; margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; outline: none; font-size-adjust: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+input[type='radio'] {-webkit-appearance: normal;}
+
+a {color: #cccccc;}
+a:hover {color: #ffffff; text-decoration: none;}
+
+/*=== Header ===*/
+#header-container {width: 100%; background: url("../images/bg-header.png") top repeat-x;}
+.logo {height: 60px; background: url("../images/logo.png") center no-repeat;}
+
+.navbar-fixed-bottom {background: url("../images/bg-footer.png") bottom repeat-x; height: 41px;}
+.btn-skewed {position: absolute;
+    width: 87px;
+    height: 35px;
+    padding: 0 10px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: #d7a3ab;
+    border: none;
+    background: #bb002d;
+    z-index: 999999;
+    background: -moz-linear-gradient(top,  #bb002d 0%, #870020 100%);
+    background: -webkit-linear-gradient(top,  #bb002d 0%,#870020 100%);
+    background: linear-gradient(to bottom,  #bb002d 0%,#870020 100%);
+}
+.btn-skewed:active {background-position: bottom;}
+.btn-skew-top-left {top: 0; left: 0; padding-right: 17px; background: url("../images/bg-skew-top-left.png") top no-repeat;}
+.btn-skew-top-right {top: 0; right: 0; padding-left: 17px; background: url("../images/bg-skew-top-right.png") top no-repeat;}
+.btn-skew-bottom-left {bottom: 0; left: 0; padding-right: 17px; background: url("../images/bg-skew-bottom-left.png") top no-repeat;}
+.btn-skew-bottom-right {bottom: 0; right: 0; padding-left: 17px; background: url("../images/bg-skew-bottom-right.png") top no-repeat;}
+
+.btn-skewed:active {color: #ffffff;
+    /*background: -moz-linear-gradient(top,  #580015 0%, #960024 100%);
+    background: -webkit-linear-gradient(top,  #580015 0%,#960024 100%);
+    background: linear-gradient(to bottom,  #580015 0%,#960024 100%);*/
+}
+
+/*=== Masthead ===*/
+#masthead-container {height: 305px; background: url("../images/bg.png") center no-repeat #000; background-size: cover;}
+
+/*=== Content ===*/
+.container {background: url("../images/bg-content.png") top repeat-x #1a1a1a; padding: 0 0 8px 0;}
+.container h1 {font-size: 14px; font-weight: 800; line-height: 40px; padding: 0 6px; position: relative;}
+.container h1 p {display: inline-block; float: left; margin-right: 5px; color: #ffffff; font-size: 13px; font-weight: 800; text-align: right; line-height: 23px;}
+.container h1 p strong {display: inline-block; line-height: 13px; font-family: 'Roboto Condensed', sans-serif;}
+
+/*=== Jackpot ===*/
+.jackpot-small {position: absolute; top: 9px; right: 10px; height: 25px; text-align: right;}
+.jackpot-small em {display: inline-block; width: 11px; height: 26px; background: url("../images/bg-dollarsign.png") no-repeat;}
+.jackpot-small div.pjackpot2 {display: inline-block; width: 150px; height: 25px; overflow: hidden; position: relative;}
+
+/*=== Live Casino Game Buttons ===*/
+.livecasino {margin-top: -98px;}
+.gamebutton-wrapper {width: 33.33%; float: left; position: relative; min-height: 1px; padding-left: 2px; padding-right: 2px;}
+.gamebutton {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    background-color: #000;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 0 1px 2px rgba(255,255,255,0.1);
+    -moz-box-shadow: inset 0 0 1px 2px rgba(255,255,255,0.1);
+    box-shadow: inset 0 0 1px 2px rgba(255,255,255,0.1);
+}
+.gamebutton:hover, .gamebutton:active {
+    border-color: #9b001b;
+    -webkit-box-shadow: inset 0 0 1px 2px rgba(255,255,255,0.15);
+    -moz-box-shadow: inset 0 0 1px 2px rgba(255,255,255,0.15);
+    box-shadow: inset 0 0 1px 2px rgba(255,255,255,0.15);
+}
+
+/* Sports */
+#sportsbutton-2 .gamebutton-wrapper {width: 50%;}
+#sportsbutton-2 .sportsbutton1 {background: url("../images/sportsbutton-1.png") top center no-repeat #000; background-size: 100%;}
+#sportsbutton-2 .sportsbutton2 {background: url("../images/sportsbutton-2.png") top center no-repeat #000; background-size: 100%;}
+
+.gamebutton1 {background: url("../images/gamebutton-1.png") top center no-repeat #000; background-size: 100%;}
+.gamebutton2 {background: url("../images/gamebutton-2.png") top center no-repeat #000; background-size: 100%;}
+.gamebutton3 {background: url("../images/gamebutton-3.png") top center no-repeat #000; background-size: 100%;}
+
+.gamebutton-overlay {width: 100%; position: absolute; bottom: 0; height: 71px; background: url("../images/bg-gamebutton.png") bottom repeat-x;}
+
+.slot-banner .slot-text{
+    color: #666;
+    text-align: center !important;
+    padding: 6px;
+    font-weight: 800;
+    font-size: 13px;
+    background: url("../images/linebutton2.png") center repeat-x;
+}
+
+.slot-banner .slot-text  span {
+    background: #1a1a1a;
+    padding: 3px 8px;
+}
+
+.slot-gamebutton1{background: url("../images/newbuttons.png") top center no-repeat #000; background-size: 100%; height:150px;}
+
+#gamebutton-1 .gamebutton-wrapper {width: 100%;}
+#gamebutton-1 .gamebutton1 {background: url("../images/gamebutton-1-1.png") top center no-repeat #000;}
+#gamebutton-1 .gamebutton-play {width: 100%; position: absolute; bottom: 5px; background: none;}
+#gamebutton-1 .gamebutton h3 {font-size: 13px; padding: 0 5px;}
+#gamebutton-1 .gamebutton p {font-size: 9px; padding: 0 20px; line-height: 11px; margin-top: 6px;}
+#gamebutton-1 .gamebutton-overlay {opacity: 0.4;}
+
+#gamebutton-2 .gamebutton-wrapper {width: 50%;}
+#gamebutton-2 .gamebutton1 {background: url("../images/live1.jpg") top center no-repeat #000; background-size: 100%;}
+#gamebutton-2 .gamebutton4 {background: url("../images/live4.png") top center no-repeat #000; background-size: 100%;}
+
+#gamebutton-2 .gamebutton2 {background: url("../images/live2.jpg") top center no-repeat #000; background-size: 100%;}
+#gamebutton-2 .gamebutton3 {background: url("../images/live3.jpg") top center no-repeat #000; background-size: 100%;}
+
+
+#gamebutton-3 .gamebutton1 {background: url("../images/live1.jpg") top center no-repeat #000; background-size: 100%;}
+#gamebutton-3 .gamebutton2 {background: url("../images/live2.jpg") top center no-repeat #000; background-size: 100%;}
+#gamebutton-3 .gamebutton3 {background: url("../images/live3.jpg") top center no-repeat #000; background-size: 100%;}
+
+.gamebutton-play {display: block; width: 100%; position: absolute; z-index: 99; bottom: 0; padding-bottom: 12px; text-transform: uppercase; border-radius: 4px; text-shadow: 1px 1px 4px #000;}
+.gamebutton h3 {display: block; font-size: 12px; padding: 0 5px; font-weight: 800; color: #ffffff;}
+.gamebutton p {display: block; font-size: 6px; padding: 0 10px; color: #cccccc;}
+
+/*=== Slot Items ===*/
+#nav-slot {display: block; border-radius: 6px; background: #000000; margin: 0 6px 5px 6px; border: 1px solid #555555;}
+
+#nav-slot.affix {position: fixed; top: 0; width: 100%; z-index: 999999;}
+#nav-slot ul#nav-slot-list {width: 100%; min-width: 100%; display: block; white-space: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0; padding: 0; position: relative; z-index: 1; text-align: justify;}
+#nav-slot ul li.nav-slot-tab {width: 33.3%; height: 30px; line-height: 30px; text-align: center; vertical-align: top; list-style-type: none; display: inline-block; float: left; border-right: 1px solid #555555; font-size: 12px; font-family: "Nanum Gothic", sans-serif; font-weight: 800;}
+#nav-slot ul li:first-child {border-top-left-radius: 5px; border-bottom-left-radius: 5px;}
+#nav-slot ul li:last-child {border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-right: none;}
+#nav-slot ul li.nav-slot-tab:hover {background-color: #282828; cursor: pointer;}
+#nav-slot ul li.nav-slot-tab.active, #nav-slot ul li.nav-slot-tab a.active {color: #ffffff;
+    background: -moz-linear-gradient(top,  #bb002d 0%, #870020 100%);
+    background: -webkit-linear-gradient(top,  #bb002d 0%,#870020 100%);
+    background: linear-gradient(to bottom,  #bb002d 0%,#870020 100%);
+}
+
+.slot-container {margin: 0; padding: 0; position: relative; display: block; background-color: #191919; color: #fff;}
+.slot-item {width: 118px; height: 120px; margin: 0 auto; position: relative; border: 1px solid #000000;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 1px 2px rgba(255,255,255,0.1);
+    -moz-box-shadow: inset 0 0 1px 2px rgba(255,255,255,0.1);
+    box-shadow: inset 0 0 1px 2px rgba(255,255,255,0.1);}
+.slot-title {width: 100%; display: block; text-align: center; color: #ffffff; background-color: rgba(0,0,0,0.6); position: absolute; bottom: 0; white-space: nowrap;text-overflow: ellipsis; overflow: hidden;}
+
+/*=== Footer ===*/
+footer {height: 5px; background: #1a1a1a;}
+
+/*=== Slide Menu ===*/
+.cover {width: 100%; height: 100%; background: rgba(0,0,0,0.8); position: fixed; display: none; z-index:9996;}
+.coverInside {width: 100%; height: 100%; background: rgba(0,0,0,0.8); position: fixed; display: none; z-index:9;}
+
+.scrollOff {overflow: hidden !important; position: fixed !important;}
+
+.slide-menu-close-right {right: -305px;}
+.slide-menu-open-right {right: 0;}
+
+.slide-menu-close-left {left: -305px;}
+.slide-menu-open-left {left: 0;}
+
+.slide-menu {
+    position: fixed;
+    z-index: 99999;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s cubic-bezier(0.165, 0.840, 0.440, 1.000);;
+    -moz-transition: all 0.4s cubic-bezier(0.165, 0.840, 0.440, 1.000);;
+    -ms-transition: all 0.4s cubic-bezier(0.165, 0.840, 0.440, 1.000);;
+    -o-transition: all 0.4s cubic-bezier(0.165, 0.840, 0.440, 1.000);;
+    transition: all 0.4s cubic-bezier(0.165, 0.840, 0.440, 1.000);;
+    top: 0;
+    width: 305px;
+    height: 100%;
+    color: #5c636b;
+}
+
+.slide-menu form {padding: 10px;}
+.slide-menu .form-group label {color: #4e5f6f;}
+.slide-menu .form-group label em {font-style: normal; color: #a94442;}
+.slide-menu blockquote {background: #f0f2f3; padding: 10px; font-size: 11px; border-radius: 6px;}
+.slide-menu .btn-option {background: #dddddd; font-size: 11px; width: 56px; float: left; display: inline-block; margin: 4px 1px 0 0; text-align: center; padding: 7px 0;}
+.slide-menu .btn-form {display: block; width: 100%; background-color: #9b001b; color: #ffffff; font-weight: 800;}
+
+.notes {font-size: 10px; padding: 6px 0 0 6px; color: #bebebe;}
+.form-control {padding: 4px 8px !important; box-shadow: none;}
+#slide-deposit .form-control, #slide-withdraw .form-control, #slide-transfer .form-control, #slide-bonus .form-control, #slide-friends .form-control, #slide-coupon .form-control, #slide-cashHistory .form-control, #slide-account .form-control {background-color: #ebf1f5; border-color: #d7dbdb;}
+
+.custom-width{
+    width:78%;
+}
+
+input[type='text']{
+    display: inline-block;
+}
+
+.btn-no-float{
+    float: none;!important;
+    background: #dddddd;
+    font-size: 11px;
+    width: 56px;
+    display: inline-block;
+    margin: 0px 1px 0 0;
+    text-align: center;
+    padding: 7px 0;
+}
+
+.btn-full-width{
+    width:98%!important;
+}
+
+/*=== Login ===*/
+#slide-login.slide-menu {position: fixed !important; background: url("../images/bg-login2.png") #070707 center bottom no-repeat; background-size: 100%; overflow: hidden !important; box-shadow: inset 0 0 4px rgba(255,255,255,0.2);}
+#slide-login .closeMenu {position: absolute; z-index: 999; width: 50px; height: 35px; background: url("../images/bg-skew-top-left.png") -35px top no-repeat; display: inline-block;}
+#slide-login .closeMenu:before {content: '\00D7'; font-size: 32px; font-weight: 400; height: 38px; line-height: 28px; color: #d7a3ab; padding-left: 12px;}
+#slide-login .closeMenu:active:before {color: #ffffff;}
+#slide-login .closeMenu:active {background-position: -35px bottom;}
+
+.login-container {width: 100%; text-align: center; font-family: 'Nanum Gothic', sans-serif; /*position: absolute; bottom: 5%;*/}
+.login-container h1 {margin: 10px auto;}
+.login-container .form-group {margin-bottom: 5px;}
+.login-container form {margin: 0 10px;}
+.login-container form input {background-color: #2d2d2d; border-radius: 6px; border-color: transparent; box-shadow: none; color: #999999; padding: 8px 10px;}
+.login-container form input:focus, #slide-login form input:hover {border-color: #3c3c3c; box-shadow: none;}
+.login-container form button, .view-desktop {display: block; width: 100%; background-color: #d2d2d2; margin: 5px 0; padding: 10px; font-weight: 800; color: #292929;}
+.login-container form button:focus, .login-container form button:active {background-color: #ffffff;}
+
+.login-container p {color: #646464;}
+
+.view-desktop {background-color: #1a1a1a; color: #666666; font-size: 10px; padding: 6px; text-transform: uppercase; margin-top: 20px; border-radius: 4px;}
+
+/*=== Sign Up ===*/
+#slide-signup.slide-menu {position: fixed !important; background: #1b1b1b; box-shadow: inset 0 0 4px rgba(255,255,255,0.2);}
+#slide-signup .closeMenu {position: absolute; right: 0; z-index: 999; width: 50px; height: 35px; background: url("../images/bg-skew-top-right.png") 0 top no-repeat; display: inline-block;}
+#slide-signup .closeMenu:before {content: '\00D7'; font-size: 32px; font-weight: 400; height: 38px; line-height: 28px; color: #d7a3ab; padding-left: 20px;}
+#slide-signup .closeMenu:active:before {color: #ffffff;}
+
+.signup-container {width: 100%; font-family: 'Nanum Gothic', sans-serif; position: relative;}
+.signup-container h1 {margin: 10px auto; text-align: center;}
+.signup-container h3 {text-align: center; font-size: 12px; padding: 0 22px 12px 22px; margin-bottom: 12px; color: #e6e6e6; border-bottom: 1px dotted #353535;}
+.signup-container .form-group {margin-bottom: 10px;}
+.signup-container form {margin: 0 10px;}
+.signup-container form input {background-color: #353535; border-radius: 6px; border-color: transparent; box-shadow: none; color: #ffffff; padding: 8px 10px;}
+.signup-container form input:focus, #slide-login form input:hover {border-color: #565656; box-shadow: none;}
+.signup-container form button {display: block; width: 100%; background-color: #d2d2d2; margin: 5px 0; padding: 10px; font-weight: 800; color: #292929;}
+.signup-container form button:focus, .login-container form button:active {background-color: #ffffff;}
+
+.signup-container p {color: #646464;}
+.signup-container p span {font-size: 10px; margin-left: 8px;}
+
+.signup-container .input-sm {height: 33px;}
+.signup-container .input-phone {width: 185px; float: left;}
+.signup-container .btn-sms {display: inline-block; width: 75px; padding: 4px; vertical-align: middle; margin: 0 0 0 5px; font-size: 12px; letter-spacing: -2px; height: 33px;}
+.signup-container .btn-signup {padding-top: 10px;}
+
+/*=== Form Validation ===*/
+.has-error input.form-control, input.has-error {
+    background: url("../images/icon-error.png") right center no-repeat #353535;
+    border-color: #d54b4b !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
+.has-error select.form-control, select.has-error {
+    border-color: #d54b4b !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
+.no-error input.form-control, input.no-error {
+    background: url("../images/icon-valid.png") right center no-repeat #353535;
+    border-color: #53d14c !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
+.no-error select.form-control, select.no-error {
+    border-color: #53d14c !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
+.not-used input.form-control {
+    border-color: transparent !important;
+    background: #353535 !important;
+}
+.error-message {color: #d54b4b !important; z-index: 9999; margin: 2px 0 0 0 !important; padding: 0 !important;}
+.valid-message strong {display: block; text-align: left; padding: 5px 8px; font-size: 10px; font-weight: 400; color: #009933;}
+
+
+/*=== Wallet ===*/
+#slide-wallet.slide-menu {background: #f8f8f8;}
+#slide-wallet .closeMenu {position: absolute; z-index: 999; width: 50px; height: 35px; background: url("../images/bg-skew-top-left.png") -35px top no-repeat; display: inline-block;}
+#slide-wallet .closeMenu:before {content: '\00D7'; font-size: 32px; font-weight: 400; height: 38px; line-height: 28px; color: #d7a3ab; padding-left: 12px;}
+#slide-wallet .closeMenu:active:before {color: #ffffff;}
+#slide-wallet .closeMenu:active {background-position: -35px bottom;}
+
+.slide-menu-header {
+    padding: 0 15px;
+    height: 42px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: #5d5d5d;
+    background: -moz-linear-gradient(top,  #5d5d5d 0%, #434343 100%);
+    background: -webkit-linear-gradient(top,  #5d5d5d 0%,#434343 100%);
+    background: linear-gradient(to bottom,  #5d5d5d 0%,#434343 100%);
+}
+.slide-menu-header h1 {font-size: 14px; font-weight: 700; line-height: 40px;}
+.slide-menu-header h1 span {font-size: 12px; color: #b6b6b6; margin-left: 8px;}
+
+.slide-wallet-items .wallet-item-box {display: block; padding: 11px 15px; border-bottom: 1px solid #eeeeee;}
+.slide-wallet-items .wallet-item-box:last-of-type {
+    border-bottom: none;
+    background-color: #f7f7f7;
+    border-top: 1px solid #eeeeee;}
+.slide-wallet-items .wallet-item-box strong, .slide-wallet-items .wallet-item-box h2 {font-size: 14px; font-weight: 700; line-height: 14px; color: #333333;}
+.slide-wallet-items .wallet-item-box strong {float: left;}
+.slide-wallet-items .wallet-item-box h2 {float: right;}
+
+.wallet-total {
+    height: 42px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    background: -moz-linear-gradient(top, #bb002d 0%, #870020 100%);
+    background: -webkit-linear-gradient(top, #bb002d 0%, #870020 100%);
+    background: linear-gradient(to bottom, #bb002d 0%, #870020 100%);
+}
+
+.wallet-total strong, .wallet-total h2 {color: #ffffff !important; line-height: 22px !important;}
+
+.slide-wallet-cat {margin: 10px;}
+.slide-wallet-cat button {display: inline-block; float: left; background: #d2d2d2; color: #292929; border: none; border-radius: 6px; width: 48%; height: 36px; font-weight: 800; padding: 0; margin: 2px; text-transform: uppercase;}
+.slide-wallet-cat button:hover, .slide-wallet-cat button:active {background: #474747; color: #d2d2d2;}
+
+/*=== Deposit ===*/
+#slide-deposit .closeMenu, #slide-withdraw .closeMenu, #slide-transfer .closeMenu, #slide-bonus .closeMenu, #slide-friends .closeMenu, #slide-coupon .closeMenu, #slide-cashHistory .closeMenu, #slide-account .closeMenu {position: absolute; z-index: 999; width: 50px; height: 35px; background: url("../images/bg-skew-top-left.png") -35px top no-repeat; display: inline-block;}
+#slide-deposit .closeMenu:before, #slide-withdraw .closeMenu:before, #slide-transfer .closeMenu:before, #slide-bonus .closeMenu:before,#slide-friends .closeMenu:before, #slide-cashHistory .closeMenu:before, #slide-coupon .closeMenu:before, #slide-account .closeMenu:before {content: '\00D7'; font-size: 32px; font-weight: 400; height: 38px; line-height: 28px; color: #d7a3ab; padding-left: 12px;}
+#slide-deposit .closeMenu:active:before, #slide-withdraw .closeMenu:active:before, #slide-transfer .closeMenu:active:before, #slide-bonus .closeMenu:active:before, #slide-friends .closeMenu:active:before, #slide-cashHistory .closeMenu:active:before, #slide-coupon .closeMenu:active:before, #slide-account .closeMenu:active:before {color: #ffffff;}
+#slide-deposit .closeMenu:active, #slide-withdraw .closeMenu:active, #slide-transfer .closeMenu:active, #slide-bonus .closeMenu:active, #slide-friends .closeMenu:active, #slide-cashHistory .closeMenu:active, #slide-coupon .closeMenu:active, #slide-account .closeMenu:active {background-position: -35px bottom;}
+
+
+/*=== Form ===*/
+.btn {border-radius: 6px;}
+
+/*=== Popup Notice ===*/
+.ngdialog {padding-top: 60px !important;}
+.ngdialog-notice .popup .slide-menu-header span {text-align: left; padding: 0 11px;}
+.ngdialog-notice .ngdialog-close {position: absolute; z-index: 999; top: 12px; right: 3px; width: 35px; height: 35px; display: inline-block;}
+.ngdialog-notice .ngdialog-close:before {content: '\00D7'; font-size: 32px; font-weight: 400; height: 38px; line-height: 28px; color: #d7a3ab;}
+.ngdialog-notice .ngdialog-content {width: auto; height: auto !important; position: relative; max-width: 400px; margin: 0 auto;}
+.ngdialog-notice .ngdialog-content button {width: 100%; font-size: 12px; font-weight: 800; background: #d2d2d2;}
+.ngdialog-notice .ngdialog-content button:active {background: #ffffff;}
+.ngDialog {padding: 0 10px 10px 10px;}
+
+#popup-notice {background: #2c2c2c; border-radius: 4px;}
+#popup-notice .slide-menu-header {
+    font-size: 16px;
+    line-height: 34px;
+    height: 34px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: -moz-linear-gradient(top, #bb002d 0%, #870020 100%);
+    background: -webkit-linear-gradient(top, #bb002d 0%, #870020 100%);
+    background: linear-gradient(to bottom, #bb002d 0%, #870020 100%);
+}
+#popup-notice .slide-menu-header span {text-transform: uppercase;}
+#popup-notice .slide-menu-header label {margin-bottom: 0;}
+#popup-notice .notes-info, #popup-notice .popup-content {padding: 10px 11px; color: #c6c6c6;}
+#popup-notice .popup-content {min-height: 100px; max-height: 230px; margin-bottom: 8px; overflow-y: auto; -webkit-overflow-scrolling: touch;}
+
+.slot-1000 {background-size: 100% !important;}
+.slot-1005 {background-position: 7px 10px !important;}
+.slot-1004 {background-position: center 17px !important;}
+
+/*Bonus History*/
+.bonus-header h4{padding: 7px 7px 15px; text-align:center; font-weight: 900}
+.bonus-body {background-color: #F0F2F3; border-radius: 5px; height: auto; margin: 0 auto 10px; padding:7px; width: 280px; box-shadow: 1px 1px 5px #333333; }
+.bonus-title{font-weight: 900!important; line-height: 1.6;  text-align:right;  font-size: 11px;}
+.bonus-name {font-weight: 500; line-height: 1.6;  text-align: left;  padding-left: 10px; font-size: 11px;}
+.bonus-left{width: 22%; float: left;  margin-right: 20px;  }
+.clear{clear: both;}
+.bonus-name-amount{color:#012069; font-weight: 800; line-height: 1.9; font-size: 11px;}
+
+/*Coupon*/
+.coupon-header h4{padding: 7px 7px 15px; text-align:center; font-weight: 900}
+.coupon-body {background-color: #F0F2F3; border-radius: 5px; height: auto; margin: 0 auto 10px; padding:7px; width: 280px; box-shadow: 1px 1px 5px #333333; }
+.coupon-title{font-weight: 900!important; line-height: 1.6;  text-align:right;  font-size: 11px;}
+.coupon-name {font-weight: 500; line-height: 1.6;  text-align: left;  padding-left: 10px; font-size: 11px;}
+.coupon-left{width: 22%; float: left;  margin-right: 20px;  }
+.clear{clear: both;}
+.coupon-name-amount{color:#012069; font-weight: 800; line-height: 1.9; font-size: 11px;}
+
+/*Friend List*/
+.friend-header h4{padding: 7px 7px 15px; text-align:center; font-weight: 900}
+.friend-body {background-color: #F0F2F3; border-radius: 5px; height: auto; margin: 0 auto 10px; padding:7px; width: 280px; box-shadow: 1px 1px 5px #333333; }
+.friend-title{font-weight: 900!important; line-height: 1.6;  text-align:right;  font-size: 11px;}
+.friend-name {font-weight: 500; line-height: 1.6;  text-align: left;  padding-left: 10px; font-size: 11px;}
+.friend-left{width: 22%; float: left;  margin-right: 20px;  }
+.clear{clear: both;}
+
+/*Cash History*/
+.cashHistory-header h4{padding: 7px 7px 15px; text-align:center; font-weight: 900}
+.cashHistory-body {background-color: #F0F2F3; border-radius: 5px; height: auto; margin: 0 auto 10px; padding:7px; width: 280px; box-shadow: 1px 1px 5px #333333; }
+.cashHistory-title{font-weight: 900!important; line-height: 1.6;  text-align:right;  font-size: 11px;}
+.cashHistory-name {font-weight: 500; line-height: 1.6;  text-align: left;  padding-left: 10px; font-size: 11px;}
+.cashHistory-left{width: 22%; float: left;  margin-right: 20px;  }
+.clear{clear: both;}
+.cashHistory-name-amount{color:#012069; font-weight: 800; line-height: 1.9; font-size: 11px;}
+
+/*=== Sports Page Notice ===*/
+.ngdialog-safari .ngdialog-content {position: relative; width: 90%; max-width: 520px; margin: 1% auto 0 auto; background: #fff; padding-bottom: 5px;}
+.ngdialog-notice .ngdialog-close {position: absolute; z-index: 999; top: 18px; right: 13px; width: 35px; height: 35px; display: inline-block;}
+
+.safari-notice {color: #000; text-align: center; background: #fff; width: 100%; font-weight: 300; padding: 30px 0;}
+.safari-notice h1, .safari-notice h2, .safari-notice h4 {display: block; padding: 0 60px; color: #4a4a4a;}
+.safari-notice h1 {font-size: 18px; font-weight: 700; margin-bottom: 2px;}
+.safari-notice h2 {font-size: 16px; font-weight: 400; line-height: 20px;}
+.safari-notice h4 {font-size: 12px; color: #666666; line-height: 20px; margin-top: 11px;}
+.safari-notice p {text-align: center; margin: 18px auto 0 auto;}
+.safari-notice p a {display: inline-block; color: #bb002d; padding: 11px 14px; margin: 0 4px; border-radius: 10px; border: 1px solid #eeeeee; text-decoration: none;}
+.safari-notice p a:hover, .safari-notice p a:active {color: #870020; border: 1px solid #870020;}
+.safari-notice p a img {display: block; margin: 0 auto 8px auto;}
+.safari-notice p a span {display: block; font-size: 14px;}
+
+.ccount{background-color: #9b001b; border-radius: 4px; color: #FFFFFF !important; display: inline-block !important; font-size: 10px !important; font-weight: 700!important; height: 20px; line-height: 19px!important; text-align: center; vertical-align: middle; width: 20px;  margin-left: 3px;!important; padding-right: 1px; }

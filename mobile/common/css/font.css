@@ -1,0 +1,36 @@
+@font-face {
+    font-family:'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/en/Roboto-Bold.ttf") format('ttf');
+}
+
+@font-face {
+    font-family:'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/en/Roboto-Regular.ttf") format('ttf');
+}
+
+@font-face {
+    font-family:'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/en/Roboto-Light.ttf") format('ttf');
+}
+
+@font-face {
+    font-family:'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/en/RobotoCondensed-Bold.ttf") format('ttf');
+}
+
+@font-face {
+    font-family:'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/en/RobotoCondensed-Regular.ttf") format('ttf');
+}
+
+body, a, input, textarea, button, select {font-family: 'Roboto', sans-serif;}
